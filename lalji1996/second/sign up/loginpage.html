@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+*{
+	margin: 0;
+	padding: 5px 135px 0;
+	background-position: center;
+	height: auto;
+}
+body{
+
+	font-family: 'Lato', sans-serif;
+	background-image: url('img1.18.jpg');
+	background-position: center top;
+	background-size:cover;
+	margin: 0;
+     height: 98vh;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+
+
+}
+.error-message {
+	padding: 20px 20px;
+	background: #fff1f2;
+	border: #ffd5da 1px solid;
+	color: #d6001c;
+	border-radius: 4px;
+}
+.success-message {
+	padding: 12px 0;
+	background: #cae0c4;
+	border: #c3d0b5 1px solid;
+	color: #027506;
+	border-radius: 4px;
+}
+.demo-table {
+	background: #d9eeff;
+	width: 100%;
+	border-spacing: initial;
+	margin: 0px 20.5px ;
+	word-break: break-word;
+	table-layout: auto;
+	line-height: 1em;
+	color: #333;
+	border-radius: 4px;
+	padding: 25px 30px;
+}
+.demo-table td {
+	padding: 14px 10px;
+}
+.demoInputBox {
+	padding: 9px 15px;
+	border: #a9a9a9 1px solid;
+	border-radius: 4px;
+}
+.btnRegister {
+	padding: 10px 30px;
+	background-color: #3367b2;
+	border: 0;
+	color: #FFF;
+	cursor: pointer;
+	border-radius: 4px;
+	margin-left: 10px;
+}
+.success-message{
+	width: 100%;
+	text-align: left;
+	margin: 0px 20px;
+
+}
+
+#head{
+	text-align: center;
+	border-radius: 5px;
+	color: #fff;
+	width: 50%;
+	margin: 0 158px -6px;
+	padding: 3px 50px 8px;
+
+
+}
+</style>
+</head>
+<body>
+<h1 id="head">HP</h1>
+<form name="frmRegistration" method="post" action="">
+	<table border="0" width="500" align="center" class="demo-table">
+		<div class="success-message"><h3>Create your acount</h3></div>
+		<tr>
+			<td>User Name</td>
+			<td><input type="text" class="demoInputBox" name="userName" placeholder=" Enter your userName......................"></td>
+		</tr>
+		<tr>
+			<td>First Name</td>
+			<td><input type="text" class="demoInputBox" name="firstName" placeholder=" Please Enter your firstName.................."></td>
+		</tr>
+		<tr>
+			<td>Last Name</td>
+			<td><input type="text" class="demoInputBox" name="lastName" placeholder="your lastName.............................."></td>
+		</tr>
+		<tr>
+			<td>Password</td>
+			<td><input type="password" class="demoInputBox" name="password" placeholder="Enter your password......................."></td>
+		</tr>
+		<tr>
+			<td>Confirm Password</td>
+			<td><input type="password" class="demoInputBox" name="confirm_password" placeholder="Enter your Confirm password..............."></td>
+		</tr>
+		<tr>
+			<td>Email</td>
+			<td><input type="text" class="demoInputBox" name="userEmail" placeholder="Enter your email.........................."></td>
+		</tr>
+		<tr>
+			<td colspan=2>
+			<input type="checkbox" name="terms"> I accept Terms and Conditions <input type="submit" name="register-user" value="Register" class="btnRegister"></td>
+
+	</table>
+</form>
+
+
+</body>
+</html>

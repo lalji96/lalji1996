@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<title>login page</title>
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+<head>
+<style>
+*{
+	margin: 0;
+	padding: 6px 130px;
+	background-position: center;
+  position: relative;
+
+}
+body{
+	font-family: 'Lato', sans-serif;
+	background-image: url('imgs.jpg');
+	background-position: center top;
+	background-size:cover;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Roboto', sans-serif;
+
+}
+.error-message {
+	padding: 10px 30px;
+	background: #fff1f2;
+	border: #ffd5da 1px solid;
+	color: #d6001c;
+	border-radius: 4px;
+}
+.success-message {
+	padding: 14px 0;
+	background: #cae0c4;
+	border: #c3d0b5 1px solid;
+	color: #027506;
+	border-radius: 4px;
+	padding: 14px 30px;
+
+
+}
+.demo-table {
+	background: #d9eeff;
+	text-align: left;
+	text-overflow: clip;
+	word-break: break-word;
+	table-layout: auto;
+	line-height: 1em;
+	color: #333;
+	border-radius: 4px;
+	padding: 18px 20px;
+	width: 110%;
+	
+	
+}
+.demo-table td {
+	padding: 14px 0;
+
+
+}
+.demoInputBox {
+	padding: 9px 30px;
+	border: #a9a9a9 1px solid;
+	border-radius: 4px;
+    margin-left: 20ex;
+
+}
+.btnRegister {
+	padding: 8px 10px;
+	background-color: #3367b2;
+	border: 0;
+	color: #FFF;
+	cursor: pointer;
+	border-radius: 4px;
+	margin-left: 10px;
+}
+.success-message{
+	width: 100%;
+	text-align: left;
+	padding: 14px 25px;
+	
+
+
+}
+
+#head{
+	color: #fff;
+	text-align: center;
+	border-radius: 5px;
+	width: 50%;
+	margin: 0 13ex -6px;
+	padding: 3px 10px 8px;
+}
+button:hover {
+    opacity: 0.8;
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 5px 8px;
+
+}
+.cancelbtn .hover {
+    background-color: #a9a9a9;
+}
+.container {
+    padding: 0px 9px;
+}
+.psw{
+float: right;
+text-align:justify;
+width: 60%;
+padding-top:10px;
+
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+#save{
+	text-align: center;
+	
+
+}
+.pass{
+	width: 100%;
+	padding:10px;
+
+}
+</style>
+</head>
+<body>
+<h1 id="head">HP</h1>
+<form name="frmRegistration" method="post" action="">
+	<table border="0" width="500" align="center" class="demo-table">
+		<div class="success-message"><h3 id="save">Login your acount</h3></div>
+		<tr>
+			<td>User Name</td>
+			<td><input type="text" class="demoInputBox" name="userName" placeholder=" Enter your userName......................"></td>
+		</tr>
+
+		<tr>
+			<td>Password</td>
+			<td><input type="password" class="demoInputBox" name="password" placeholder="Enter your password......................."></td>
+		</tr>
+
+		<tr>
+			<td colspan=2>
+			<input type="checkbox" name="terms"> I accept Terms and Conditions <input type="submit" name="register-user" value="Sign In" class="btnRegister"></td>
+</tr>
+<tr>
+<div class="container"></div>
+	<td><button type="button" class="cancelbtn" style="href:#home">Cancel</button></td>
+    <td><div class="psw">Forgot <a href="#" class="pass">password?</a></div></td>
+</tr>
+	</table>
+</form>
+
+<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAmfhBOr7oIFV5VFjKYNKekQzd648SBCsg",
+    authDomain: "mypage-af3f5.firebaseapp.com",
+    databaseURL: "https://mypage-af3f5.firebaseio.com",
+    projectId: "mypage-af3f5",
+    storageBucket: "mypage-af3f5.appspot.com",
+    messagingSenderId: "964421152723"
+  };
+  firebase.initializeApp(config);
+</script>
+</body>
+</html>
